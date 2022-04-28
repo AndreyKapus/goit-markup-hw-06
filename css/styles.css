@@ -734,7 +734,7 @@ border-radius: 4px;
 
 .footer-soc-items {
   justify-content: center;
-  padding-right: 93px;
+  margin-right: auto;
 }
 
 .footer-container {
@@ -762,6 +762,11 @@ margin-right: 70px;
   width: 200px;
   height: 50px;
 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
   color: var(--hero-title-color);
   background-color: var(--accent-color);
 
@@ -784,7 +789,7 @@ margin-right: 70px;
   width: 358px;
 }
 
-.sign-label {
+.call-to-action {
   display: block;
   color: var(--hero-title-color);
   margin-bottom: 20px;
@@ -797,19 +802,20 @@ margin-right: 70px;
 }
 
 .sign-input {
+padding-left: 16px;
+
  width: 358px;
  height: 50px;
 
- background-color: var(--accent-background-color);
+ background-color: transparent;
  border: 1px solid rgba(255, 255, 255, 0.3);
  box-sizing: border-box;
  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
  border-radius: 4px;
+ color: var(--hero-title-color);
 }
 
 .sign-form input::placeholder {
-  padding-left: 12px;
-
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -951,6 +957,7 @@ border-bottom: 1px solid var(--card-border-color);
 padding-top: 20px;
 padding-bottom: 20px;
 padding-left: 24px;
+padding-right: 24px;
 }
 
 .card-link {
@@ -1050,6 +1057,7 @@ padding-left: 24px;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   background-color: var(--hero-title-color);
@@ -1063,9 +1071,6 @@ padding-left: 24px;
 
 /* -----------Форма-------------- */
 
-.form {
-  padding: 40px;
-}
 
 .modal-button {
   transition-property: fill;
@@ -1119,7 +1124,7 @@ textarea {
 }
 
 .form-field input {
-  transition-property: outline-color, border-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   animation-timing-function: var(--timing-function);
 
@@ -1231,6 +1236,7 @@ textarea {
 
   border-radius: 2px;
   border: 2px solid var(--title-text-color);
+cursor: pointer;
 }
 
 .checkbox:checked + .icon {
@@ -1239,6 +1245,10 @@ textarea {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
+}
+
+.checkbox:focus + .icon {
+  border-color: #2196f3;
 }
 
 .checkbox {
