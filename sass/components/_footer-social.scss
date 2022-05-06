@@ -46,14 +46,14 @@
         background-color: $accent-color;
     }
   }
-  
-  .footer__social--item:not(:last-child) {
-    margin-right: 10px;
-  }
-  
+
   .footer__social--item {
     justify-content: center;
     margin-right: auto;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
   
   .footer__social--icon {
