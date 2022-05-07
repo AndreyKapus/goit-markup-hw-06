@@ -1,6 +1,5 @@
 .footer__logo {
-    font-weight: 700;
-    text-decoration: none;
+    
     color: $hero-title-color;
     display: inline-block;
   
@@ -10,6 +9,14 @@
     padding-bottom: 0px;
   
     margin-top: 0px;
+
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
 
     &--white {
         color: $accent-color;
