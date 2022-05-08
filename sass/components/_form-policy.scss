@@ -26,7 +26,6 @@
   
     border-radius: 2px;
     border: 2px solid $title-text-color;
-    cursor: pointer;
 
     .checkbox:checked + & {
         background-color: $accent-color;

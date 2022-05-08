@@ -13,8 +13,9 @@
     visibility: hidden;
     transition-timing-function: $timing-function;
     transition-duration: $transition-duration;
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
   }
   
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.7);
-  }
